@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Media Widget</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1b22;
+    --muted: #5c5b66;
+    --accent: #7a4fff;
+    --card: #f6f5fb;
+    --border: #e4e2ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131118;
+      --fg: #ececf1;
+      --muted: #a4a2b3;
+      --accent: #c7a8ff;
+      --card: #1e1b26;
+      --border: #2c2937;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .app {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 34px 0 10px;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 0 0 8px;
+  }
+  .summary p { margin: 0; }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="updated"><span class="app">Media Widget</span> · Last updated 25 September 2026</p>
+  </header>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Media Widget does not collect, store, transmit, or share any
+    personal information. Everything the app reads stays on your device. There are no accounts,
+    no analytics, no advertising, and no third-party data sharing.</p>
+  </div>
+
+  <p>Media Widget (“the app”) is a home-screen widget that shows what is currently playing on
+  your device and lets you control playback. This policy explains what the app does and does not
+  do with your information.</p>
+
+  <h2>What the app accesses</h2>
+  <p>To show the current track and provide playback controls, the app uses Android’s
+  <strong>Notification Access</strong> (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) and the
+  system <strong>Media Session</strong> APIs. Through these, the app reads — only while it is
+  running on your device:</p>
+  <ul>
+    <li>The title, artist, and album of the media currently playing.</li>
+    <li>The album artwork provided by the playing app.</li>
+    <li>Playback position and state (playing/paused), to draw the progress bar.</li>
+    <li>The identity of the app that is playing, so you can pick which sources to show.</li>
+  </ul>
+  <p>This information is used <strong>only</strong> to render the widget and to send playback
+  commands (play, pause, next, previous) back to the app you are listening to.</p>
+
+  <h2>What the app does with it</h2>
+  <ul>
+    <li>All processing happens <strong>locally on your device</strong>.</li>
+    <li>Album artwork may be cached temporarily in the app’s private storage so the widget can
+    redraw quickly. This cache is never uploaded anywhere and is removed when the app’s data is
+    cleared.</li>
+    <li>Your widget settings (such as which sources to show and appearance options) are stored
+    locally on your device.</li>
+  </ul>
+
+  <h2>What the app does NOT do</h2>
+  <ul>
+    <li>It does <strong>not</strong> send any of the above information off your device.</li>
+    <li>It does <strong>not</strong> use analytics, crash reporting, or advertising SDKs.</li>
+    <li>It does <strong>not</strong> create an account or ask for your identity.</li>
+    <li>It does <strong>not</strong> read the contents of your notifications beyond the media
+    playback information described above.</li>
+    <li>It does <strong>not</strong> sell or share any data with third parties.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Notification Access</strong> — required to detect currently-playing media and to
+    control playback. You grant this manually in Android Settings and can revoke it at any time.</li>
+    <li><strong>Ignore Battery Optimizations</strong> (if present) — requested only to improve the
+    reliability of live updates on devices that aggressively suspend background apps. It transmits
+    no data.</li>
+  </ul>
+
+  <h2>Children’s privacy</h2>
+  <p>The app collects no personal information from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the “Last updated” date above will change and the new version will be
+  posted at this URL.</p>
+
+  <h2>Contact</h2>
+  <p>For any questions about this policy, contact
+  <a href="mailto:getlabsstore@gmail.com">getlabsstore@gmail.com</a> (GetLabs).</p>
+
+  <footer>
+    © 2026 GetLabs · Media Widget
+  </footer>
+</main>
+</body>
+</html>
